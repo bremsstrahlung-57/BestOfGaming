@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto+Mono:wght@200&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap");
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* width */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+*::-webkit-scrollbar-track {
+  box-shadow: inset -7px -4px 8px 0px black;
+  /* border-radius: 3px; */
+}
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 3px;
+}
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(27, 27, 27); 
+}
+
+
+/* NAVBAR */
+#logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    /* padding: 12px; */
+    margin: -20px 300px 2px 300px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    flex-direction: column;
+}
+#logo img{
+    /* filter: invert(1); */
+    height: 60px;
+    width: 60px;
+    margin: 0px 5px;
+    border-radius: 2px;
+}
+#logo p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+#navbar{
+    background-color: black;
+    padding: 23px 14px;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    /* border-bottom: 1px solid white; */
+    height: 180px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navbar li{
+    list-style:  none;
+    top: 10px;
+    position: relative;
+}
+#navbar li a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 11px 15px;
+    margin: 15px;
+    transition: font-size 0.5s ease;
+}
+#navbar li a:hover {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/* SECTION */
+
+/* INTRO SECTION */
+#introSection{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    height: 530px;
+    background: url(../static/img/tlou2_3_edit.png)center / cover no-repeat;
+    transition: height 0.6s ease-in-out;
+}
+#introSection:hover{
+    height: 600px;
+}
+
+/* FIRST SECTION */
+#firstSection{
+    /* background-color: powderblue; */
+    color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    background: url(../static/img/tlou2_2.png) center / cover no-repeat;
+    height: 400px;
+    transition: height 0.6s ease-in-out;
+}
+#firstSection:hover{
+    height: 600px;
+}
+.hover-content{
+    font-size: 0px;
+}
+#firstSection:hover .hover-content{
+    font-size: 20px;
+    padding: 10px;
+    margin: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#firstSection:hover .title{
+    font-size: 0px;
+}
+
+/* SECOND SECTION */
+#secondSection{
+    /* background-color: palegreen; */
+    color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    background: url(../static/img/minecraft.png) center / cover no-repeat;
+    height: 400px;
+    transition: height 0.6s ease-in-out;
+}
+#secondSection:hover{
+    height: 600px;
+}
+.hover-content{
+    font-size: 0px;
+    /* transition: font-size 0.6s ease-in-out; */
+}
+#secondSection:hover .hover-content{
+    font-size: 20px;
+    padding: 10px;
+    margin: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#secondSection:hover .title{
+    font-size: 0px;
+}
+
+
+
+/* THIRD SECTION */
+#thirdSection{
+    /* background-color: powderblue; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    background: url(../static/img/elden.png) center / cover no-repeat;
+    height: 400px;
+    transition: height 0.6s ease-in-out;
+}
+#thirdSection:hover{
+    height: 600px;
+}
+.hover-content{
+    font-size: 0px;
+    /* transition: font-size 0.6s ease-in-out; */
+}
+#thirdSection:hover .hover-content{
+    font-size: 20px;
+    padding: 10px;
+    margin: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#thirdSection:hover .title{
+    font-size: 0px;
+}
+
+
+/* FOURTH SECTION */
+#fourthSection{
+    /* background-color: palegreen; */
+    color: palegoldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    background: url(../static/img/sekiro.png) center / cover no-repeat;
+    height: 400px;
+    transition: height 0.6s ease-in-out;
+}
+#fourthSection:hover{
+    height: 600px;
+}
+.hover-content{
+    font-size: 0px;
+    /* transition: font-size 0.6s ease-in-out; */
+}
+#fourthSection:hover .hover-content{
+    font-size: 20px;
+    padding: 10px;
+    margin: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#fourthSection:hover .title{
+    font-size: 0px;
+}
+
+
+/* FIFTH SECTION */
+#fifthSection{
+    /* background-color: powderblue; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    background: url(../static/img/dbh2.png) center / cover no-repeat;
+    height: 400px;
+    transition: height 0.6s ease-in-out;
+}
+#fifthSection:hover{
+    height: 600px;
+}
+.hover-content{
+    font-size: 0px;
+    /* transition: font-size 0.6s ease-in-out; */
+}
+#fifthSection:hover .hover-content{
+    font-size: 20px;
+    padding: 10px;
+    margin: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#fifthSection:hover .title{
+    font-size: 0px;
+}
+
+
+
+/*FOOTER*/
+
+#footer{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.web{
+    width: 360px;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 40px;
+    /* position: relative; */
+    /* right: 200px; */
+    flex-direction: column;
+    justify-content: center;
+}
+.web img{
+    /* filter: invert(1); */
+    height: 70px;
+    width: 70px;
+    margin: 5px 0px;
+    position: relative;
+    top: 40px;
+}
+#footer-title{
+    display: flex;
+    font-size: 1.5rem;
+    position: relative;
+    top: -70px;
+}
+#footer-title-2{
+    display: flex;
+    font-size: 1.5rem;
+    left: 29px;
+    margin-bottom: 30px;
+    top: 5px;
+    position: relative;
+}
+#footer-title-3{
+    display: flex;
+    font-size: 1.5rem;
+    left: 29px;
+    top: -12px;
+    position: relative;
+}
+.footer-content{
+    display: flex;
+    font-size: 15px;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.links li{
+    list-style:  none;
+    top: 10px;
+    position: relative;
+}
+.links li a {
+    color: white;
+    font-size: 15px;
+    padding: 11px 15px;
+    margin: 15px;
+    text-decoration: none;
+    transition: font-size 0.5s ease-in-out;
+}
+.links li a:hover{
+    font-weight: 600;
+    font-size: 16.5px;
+    color: aquamarine;
+}
+
+/* MEDIA */
+
+/* .burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+} */
+
+@media only screen and (max-width: 1300px){
+    #logo{
+        margin: -10px;
+    }
+    #introSection{
+        height: 60vh;
+    }
+    #firstSection #secondSection #thirdSection #fourthSection #fifthSection{
+        height: 500px;
+    }
+    #navbar li a{
+        font-size: 25px;
+    }
+    #navbar li a:hover{
+        font-size: 30px;
+    }
+    #logo p{
+        font-size: 20px;
+    }
+    .web{
+        width: 200px;
+        margin: auto;
+    }
+    .web img{
+        top: 69px;
+    }
+    #footer-title #footer-title-2 #footer-title-3{
+        font-size: 1.2 rem;
+    }
+    
+    .footer-content{
+        font-size: 13px;
+    }
+    .links li a {
+        font-size: 13px;
+        padding: 5px 7px;
+        margin: 7px;
+    }
+    .links li a:hover{
+        font-size: 15px;
+    }
+    /* .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 450px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    } */
+}

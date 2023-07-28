@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto+Mono:wght@200&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+h1 {
+  text-align: center;
+}
+
+.s {
+  min-height: 130vh;
+  display: flex;
+}
+.container h1 {
+  font-family: "Roboto Mono", monospace;
+  padding: 80px;
+  font-size: 2.5rem;
+  color: white;
+}
+.container {
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 18px 0px;
+    backdrop-filter: brightness(0.65);
+    /* border: 0.1px solid black; */
+    border-radius: 12px;
+}
+.s::before {
+  content: "";
+  position: absolute;
+  background: url(../static/img/wallpaper_digiart.png) no-repeat center center/cover;
+  z-index: -1;
+  width: 100%;
+  height: 130%;
+  /* top: 0px; */
+  left: 0px;
+}
+.signIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myInput {
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 4px;
+  outline: none;
+}
+
+.btn {
+  padding: 8px 12px;
+  margin: 65px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  width: 40%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.btn:hover {
+  color: black;
+  background-color: white;
+  width: 45%;
+}
+
+
+.reg{
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  transition: font-size 0.5s ease-in-out;
+}
+.reg:hover{
+  color: powderblue;
+  font-size: 17px;
+}
+.alert-box{
+  position: absolute;
+  top: 28.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+  /* background: gray; */
+  border-top: 10px solid black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  transition: 1s;
+  backdrop-filter: brightness(0.5);
+}
+
+@media only screen and (max-width: 1300px) {
+  .s {
+    min-height: 120vh;
+  }
+  .s::before{
+    height: 150vh;
+    top: 0px;
+  }
+  .container {
+    width: auto;
+    /* margin: auto; */
+    height: auto;
+    padding: 20px
+  }
+  .container h1 {
+    font-size: 3rem;
+    /* margin-top: 7vh; */
+  }
+  .myInput {
+    margin: 50px;
+    padding: 25px;
+    width: 90%;
+    font-size: 30px;
+  }
+  .btn {
+    font-size: 25px;
+    width: 50%;
+    height: 80px;
+    padding: 2px 16px;
+    margin: 85px;
+  }
+}

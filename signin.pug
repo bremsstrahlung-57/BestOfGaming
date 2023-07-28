@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  script(src='/static/form.js')
+
+block style
+    style
+      include  ../static/style.css
+      include  ../static/styleSignIn.css
+
+block content
+    div.s
+      div.alert-box
+         p.alert M E S S A G E
+      div.container
+         h1 S I G N &nbsp;&nbsp;  I N
+         form(action="/signin",method="post", class="signIn")
+             input(type="email", class="myInput", name="email",placeholder="E-mail" required)
+             input(type="password", class="myInput", name="passwd" ,placeholder="Password" required)
+             button(class="btn")
+                | S I G N &nbsp;&nbsp;  I N
+             a.reg(href = "/register") Don't have an account? Register one

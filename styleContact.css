@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto+Mono:wght@200&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap");
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    margin: 12px 0;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background: url(../static/img/wallpaper_dawn.png) no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 150%;
+    top: 0px;
+    left: 0px;
+    /* filter: blur(4px); */
+}
+.container{
+    min-height: 100vh;
+    margin: 45px 0px;
+}
+.container h1{
+    font-family: 'Roboto Mono', monospace;
+    padding: 16px;
+    font-size: 2.5rem;
+    color: white;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    width: 40%;
+    padding: 10px;
+    margin: 9px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+.btn{
+    padding: 13px 16px;
+    margin: 12px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 3px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1300px){
+    .container{
+        min-height: 130vh;
+        margin: 95px 0px;
+    }
+    .container h1{
+        font-size: 3rem;
+    }
+    .myInput{
+        margin: 20px;
+        padding: 19px;
+        width: 70%;
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 30px;
+        width: 30%;
+        padding: 20px 16px;
+    }
+    .container::before{
+        height: 165vh;
+    }
+
+}
